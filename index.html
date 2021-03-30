@@ -31,26 +31,2088 @@
 	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
 	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/plugin/select2/select2.min.css">
+	<link rel="stylesheet" href="./assets/plugin/jquery-ui/jquery-ui.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	
 	<style>
 		:root {
 			--color-main: #065cab;
-			--color-hover: #02325f;
+			--color-hover: #054a8c;
+			--color-border: #e9e9e9;
+			--color-red: #cb2b0e;
 			--bg-main: #f7faff;
 			--bg-light: #F7F7F7;
 			--text-dark: #343a40;
+			--text-dark-50: #464748;
 			--text-gray: #6c757d;
 			--text-gray-50: #a4a9ae;
-			--color-border: #e9e9e9;
 		}
 	</style>
 </head>
 <body>
-
+<header class="shadow-lg bg-white position-relative template-3_header">
+	<div class="container-fluid">
+		<div class="row row-10 align-items-lg-center">
+			<div class="col-lg-1">
+				<div class="header-logo">
+					<a href="index.html" class="d-inline-block">
+						<img src="./assets/images/logo.svg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="header-navigation">
+					<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-start">
+						<li>
+							<a href="#">
+								Nhà đất bán
+								<i class="fal fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">Bán căn hộ chung cư</a>
+								</li>
+								<li>
+									<a href="#">Bán căn hộ chung cư</a>
+								</li>
+								<li>
+									<a href="#">Bán căn hộ chung cư</a>
+								</li>
+								<li>
+									<a href="#">Bán căn hộ chung cư</a>
+								</li>
+								<li>
+									<a href="#">Bán căn hộ chung cư</a>
+								</li>
+								<li>
+									<a href="#">Bán căn hộ chung cư</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Nhà đất cho thuê
+								<i class="fal fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">Cho thuê căn hộ chung cư</a>
+								</li>
+								<li>
+									<a href="#">Cho thuê căn hộ chung cư</a>
+								</li>
+								<li>
+									<a href="#">Cho thuê căn hộ chung cư</a>
+								</li>
+								<li>
+									<a href="#">Cho thuê căn hộ chung cư</a>
+								</li>
+								<li>
+									<a href="#">Cho thuê căn hộ chung cư</a>
+								</li>
+								<li>
+									<a href="#">Cho thuê căn hộ chung cư</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Dự án
+								<i class="fal fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">Căn hộ, chung cư</a>
+								</li>
+								<li>
+									<a href="#">Căn hộ, chung cư</a>
+								</li>
+								<li>
+									<a href="#">Căn hộ, chung cư</a>
+								</li>
+								<li>
+									<a href="#">Căn hộ, chung cư</a>
+								</li>
+								<li>
+									<a href="#">Căn hộ, chung cư</a>
+								</li>
+								<li>
+									<a href="#">Căn hộ, chung cư</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Cần mua, cần thuê
+								<i class="fal fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">Nhà đất cần mua <i class="fal fa-angle-right"></i></a>
+									<ul class="list-unstyled mb-0">
+										<li>
+											<a href="#">Mua căn hộ chung cư</a>
+										</li>
+										<li>
+											<a href="#">Mua nhà riêng</a>
+										</li>
+										<li>
+											<a href="#">Mua căn hộ chung cư</a>
+										</li>
+										<li>
+											<a href="#">Mua nhà riêng</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Nhà đất cần mua <i class="fal fa-angle-right"></i></a>
+									<ul class="list-unstyled mb-0">
+										<li>
+											<a href="#">Mua căn hộ chung cư</a>
+										</li>
+										<li>
+											<a href="#">Mua nhà riêng</a>
+										</li>
+										<li>
+											<a href="#">Mua căn hộ chung cư</a>
+										</li>
+										<li>
+											<a href="#">Mua nhà riêng</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Tin tức
+								<i class="fal fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#">BĐS & Covid 19</a>
+								</li>
+								<li>
+									<a href="#">Tin thị trường</a>
+								</li>
+								<li><a href="#">Interaktive Story</a></li>
+								<li><a href="#">Phân tích - nhận định</a></li>
+								<li><a href="#">Chính sách - Quản lý</a></li>
+								<li><a href="#">Thông tin quy hoạch</a></li>
+								<li><a href="#">Bất động sản thế giới</a></li>
+								<li><a href="#">Tài chính - Chứng khoán - BĐS</a></li>
+								<li>
+									<a href="#">Tư vấn luật <i class="fal fa-angle-right"></i></a>
+									<ul class="list-unstyled mb-0">
+										<li>
+											<a href="#"> Trình tự, thủ tục</a>
+										</li>
+										<li>
+											<a href="#">Quyền sở hữu</a>
+										</li>
+										<li>
+											<a href="#">Tranh chấp</a>
+										</li>
+										<li>
+											<a href="#">Xây dựng - Hoàn công</a>
+										</li>
+										<li>
+											<a href="#">Nghĩa vụ tài chính</a>
+										</li>
+										<li>
+											<a href="#">Các vấn đề có yếu tố nước ngoài</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Tư vấn luật <i class="fal fa-angle-right"></i></a>
+									<ul class="list-unstyled mb-0">
+										<li>
+											<a href="#"> Trình tự, thủ tục</a>
+										</li>
+										<li>
+											<a href="#">Quyền sở hữu</a>
+										</li>
+										<li>
+											<a href="#">Tranh chấp</a>
+										</li>
+										<li>
+											<a href="#">Xây dựng - Hoàn công</a>
+										</li>
+										<li>
+											<a href="#">Nghĩa vụ tài chính</a>
+										</li>
+										<li>
+											<a href="#">Các vấn đề có yếu tố nước ngoài</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Nội - Ngoại thất</a></li>
+						<li><a href="#">Phong thuỷ</a></li>
+						<li><a href="#">Danh bạ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="header-actions">
+					<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-end">
+						<li class="favourite">
+							<a href="#" title="Danh sách tin đã lưu">
+								<i class="far fa-heart"></i>
+							</a>
+						</li>
+						<li class="account">
+							<a href="#modalLogin" data-toggle="modal">
+								Đăng nhập
+							</a>
+							<a href="#modalRegister" data-toggle="modal">
+								Đăng ký
+							</a>
+						</li>
+						<li class="button">
+							<a href="#" class="btn template-3-btn__outline">
+								Đăng tin
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="main">
+	<div class="template-3_banner position-relative">
+		<div class="swiper-container" id="swiper-banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="banner-item">
+						<a href="" class="link-cover"></a>
+						<span class="image-cover"
+						      style="background-image: url('./assets/images/banner/Banner-bat-dong-san-10-1400x519.jpg')"></span>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="banner-item">
+						<a href="" class="link-cover"></a>
+						<span class="image-cover"
+						      style="background-image: url('./assets/images/banner/banner-webjpg-17120815565823395.jpg')"></span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="template-3_form">
+			<form action="">
+				<div class="search-index">
+					<ul class="list-unstyled mb-0 search-tab">
+						<li class="active">Nhà đất bán</li>
+						<li>Nhà đất cho thuê</li>
+					</ul>
+					<div class="search-inner">
+						<div class="search-main">
+							<div class="search-category dropdown">
+								<div class="select-choose" data-toggle="dropdown">
+									<span><img src="./assets/images/icon/icon-home-search.png" alt=""></span>
+									Loại nhà đất
+								</div>
+								<div class="select-option dropdown-menu">
+									<ul class="list-unstyled mb-0">
+										<li>
+											<span>Tất cả nhà đất</span>
+										</li>
+										<li class="active">
+											<span><img src="./assets/images/icon/chungcu.png"
+											           alt="">Căn hộ chung cư</span>
+										</li>
+										<li>
+											<span><img src="./assets/images/icon/nhaban.png"
+											           alt="">Các loại nhà bán</span>
+											
+											<ul class="list-unstyled mb-0">
+												<li>
+													<span>Nhà riêng</span>
+												</li>
+												<li>
+													<span>Nhà biệt thự, liền kề</span>
+												</li>
+												<li>
+													<span>Nhà mặt phố</span>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span><img src="./assets/images/icon/datban.png"
+											           alt="">Các loại đất bán</span>
+											
+											<ul class="list-unstyled mb-0">
+												<li>
+													<span>Đất nền dự án</span>
+												</li>
+												<li>
+													<span>Bán đất</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="search-input">
+								<input type="text" placeholder="Tìm kiếm địa điểm, khu vực...">
+							</div>
+							<div class="search-button">
+								<button type="submit"><i class="far fa-search mr-2"></i> Tìm kiếm</button>
+							</div>
+						</div>
+						<div class="search-bottom mt-3">
+							<div class="search-bottom_item">
+								<select name="" id="" class="template-3_select2">
+									<option value="">Trên toàn quốc</option>
+									<option value="">Hồ Chí Minh</option>
+									<option value="">Hà Nội</option>
+									<option value="">Đà Nẵng</option>
+									<option value="">Cần Thơ</option>
+									<option value="">Hồ Chí Minh</option>
+									<option value="">Hà Nội</option>
+									<option value="">Đà Nẵng</option>
+									<option value="">Cần Thơ</option>
+									<option value="">Hồ Chí Minh</option>
+									<option value="">Hà Nội</option>
+									<option value="">Đà Nẵng</option>
+									<option value="">Cần Thơ</option>
+								</select>
+							</div>
+							<div class="search-bottom_item dropdown">
+								<div class="search-bottom_result" data-toggle="dropdown">
+									Mức giá
+								</div>
+								<div class="search-bottom_dropdown dropdown-menu">
+									<div class="price-slide inner-slide">
+										<input class="min-value advance-options"
+										       data-val="true"
+										       data-val-number=""
+										       decimal="true"
+										       id="txtPriceMinValue"
+										       maxlength="6"
+										       name="MinPrice"
+										       numbersonly="true"
+										       placeholder="Từ"
+										       type="text"
+										       value=""/>
+										<span>-</span>
+										<input class="min-value advance-options"
+										       data-val="true"
+										       data-val-number=""
+										       decimal="true"
+										       id="txtPriceMaxValue"
+										       maxlength="6" name="MaxPrice"
+										       numbersonly="true"
+										       placeholder="đến"
+										       type="text"
+										       value=""/>
+										<div id="price-slider-range" class="price-filter-range slider-range"
+										     name="rangeInput"></div>
+									</div>
+									<ul class="list-unstyled mb-0">
+										<li>Mức giá</li>
+										<li>< 500 triệu</li>
+										<li>500 - 800 triệu</li>
+										<li>800 triệu - 1 tỷ</li>
+										<li>1 - 2 tỷ</li>
+										<li>2 - 3 tỷ</li>
+										<li>3 - 5 tỷ</li>
+										<li>5 - 7 tỷ</li>
+										<li>7 - 10 tỷ</li>
+									</ul>
+								</div>
+							</div>
+							<div class="search-bottom_item dropdown">
+								<div class="search-bottom_result" data-toggle="dropdown">
+									Diện tích
+								</div>
+								<div class="search-bottom_dropdown dropdown-menu">
+									<div class="area-slide inner-slide">
+										<input class="min-value advance-options"
+										       data-val="true"
+										       data-val-number=""
+										       decimal="true"
+										       id="txtAreaMinValue"
+										       maxlength="6"
+										       name="MinPrice"
+										       numbersonly="true"
+										       placeholder="Từ"
+										       type="text"
+										       value=""/>
+										<span>-</span>
+										<input class="min-value advance-options"
+										       data-val="true"
+										       data-val-number=""
+										       decimal="true"
+										       id="txtAreaMaxValue"
+										       maxlength="6" name="MaxPrice"
+										       numbersonly="true"
+										       placeholder="đến"
+										       type="text"
+										       value=""/>
+										<div id="area-slider-range" class="area-filter-range slider-range"
+										     name="rangeInput"></div>
+									</div>
+									<ul class="list-unstyled mb-0">
+										<li>Diện tích</li>
+										<li>Chưa xác định</li>
+										<li><= 30 m2></li>
+										<li>30 - 50 m2</li>
+										<li>50 - 70 m2</li>
+										<li>70 - 100 m2</li>
+										<li>100 - 150 m2</li>
+										<li>150 - 200 m2</li>
+									</ul>
+								</div>
+							</div>
+							<div class="search-bottom_item">
+								<select name="" id="" class="template-3_select2">
+									<option value="">Dự án</option>
+									<option value="">Dự án 1</option>
+									<option value="">Dự án 2</option>
+									<option value="">Dự án 3</option>
+									<option value="">Dự án 4</option>
+									<option value="">Dự án 5</option>
+									<option value="">Dự án 6</option>
+									<option value="">Dự án 7</option>
+									<option value="">Dự án 8</option>
+									<option value="">Dự án 9</option>
+									<option value="">Dự án 10</option>
+								</select>
+							</div>
+							<div class="search-bottom_item">
+								<div class="search-bottom_item--action d-flex align-items-center justify-content-end">
+									<a href="#searchButtonExpanded" data-toggle="collapse"
+									   class="expand-collapse text-white"><i
+											class="fal fa-angle-down mr-2"></i>Thêm</a>
+									<a href="javascript:void(0)" class="text-white ml-4"><i
+											class="fal fa-sync mr-2"></i>Xoá</a>
+								</div>
+							</div>
+						</div>
+						<div class="collapse" id="searchButtonExpanded">
+							<div class="search-bottom mt-3">
+								<div class="search-bottom_item">
+									<select name="" id="" class="template-3_select2">
+										<option value="">Trên toàn quốc</option>
+										<option value="">Hồ Chí Minh</option>
+										<option value="">Hà Nội</option>
+										<option value="">Đà Nẵng</option>
+										<option value="">Cần Thơ</option>
+										<option value="">Hồ Chí Minh</option>
+										<option value="">Hà Nội</option>
+										<option value="">Đà Nẵng</option>
+										<option value="">Cần Thơ</option>
+										<option value="">Hồ Chí Minh</option>
+										<option value="">Hà Nội</option>
+										<option value="">Đà Nẵng</option>
+										<option value="">Cần Thơ</option>
+									</select>
+								</div>
+								<div class="search-bottom_item">
+									<select name="" id="" class="template-3_select2">
+										<option value="">Dự án</option>
+										<option value="">Dự án 1</option>
+										<option value="">Dự án 2</option>
+										<option value="">Dự án 3</option>
+										<option value="">Dự án 4</option>
+										<option value="">Dự án 5</option>
+										<option value="">Dự án 6</option>
+										<option value="">Dự án 7</option>
+										<option value="">Dự án 8</option>
+										<option value="">Dự án 9</option>
+										<option value="">Dự án 10</option>
+									</select>
+								</div>
+								<div class="search-bottom_item">
+									<select name="" id="" class="template-3_select2">
+										<option value="">Trên toàn quốc</option>
+										<option value="">Hồ Chí Minh</option>
+										<option value="">Hà Nội</option>
+										<option value="">Đà Nẵng</option>
+										<option value="">Cần Thơ</option>
+										<option value="">Hồ Chí Minh</option>
+										<option value="">Hà Nội</option>
+										<option value="">Đà Nẵng</option>
+										<option value="">Cần Thơ</option>
+										<option value="">Hồ Chí Minh</option>
+										<option value="">Hà Nội</option>
+										<option value="">Đà Nẵng</option>
+										<option value="">Cần Thơ</option>
+									</select>
+								</div>
+								<div class="search-bottom_item">
+									<select name="" id="" class="template-3_select2">
+										<option value="">Dự án</option>
+										<option value="">Dự án 1</option>
+										<option value="">Dự án 2</option>
+										<option value="">Dự án 3</option>
+										<option value="">Dự án 4</option>
+										<option value="">Dự án 5</option>
+										<option value="">Dự án 6</option>
+										<option value="">Dự án 7</option>
+										<option value="">Dự án 8</option>
+										<option value="">Dự án 9</option>
+										<option value="">Dự án 10</option>
+									</select>
+								</div>
+								<div class="search-bottom_item">
+									<div class="search-bottom_item--action d-flex align-items-center justify-content-end">
+										<a href="#searchButtonExpanded" data-toggle="collapse"
+										   class="text-white compact-collapse"><i
+												class="fal fa-angle-up mr-2"></i>Rút gọn</a>
+										<a href="javascript:void(0)" class="text-white ml-4"><i
+												class="fal fa-sync mr-2"></i>Xoá</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="template-3_content bg-light">
+		<div class="container">
+			<div class="row row-10">
+				<div class="col-md-8 col-lg-9">
+					<div class="template-3_tab">
+						<ul class="nav nav-tabs d-inline-flex shadow-lg overflow-hidden border-bottom-0 rounded-0">
+							<li class="nav-item">
+								<a class="nav-link active"
+								   id="tab-article-1"
+								   data-toggle="tab"
+								   href="#content-article-1">
+									Tin nổi bật
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"
+								   id="tab-article-2"
+								   data-toggle="tab"
+								   href="#content-article-2">
+									Tin tức
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"
+								   id="tab-article-3"
+								   data-toggle="tab"
+								   href="#content-article-3">
+									Tư vấn
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"
+								   id="tab-article-4"
+								   data-toggle="tab"
+								   href="#content-article-4">
+									Phong thuỷ
+								</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade active show" id="content-article-1">
+								<div class="template-3_article border position-relative bg-white shadow-sm">
+									<div class="row no-gutters">
+										<div class="col-md-6">
+											<div class="card rounded-0 p-3 border-0 bg-white card-article_big">
+												<a href="#" class="link-cover"></a>
+												<div class="card-header p-0 rounded-0 bg-white border-0">
+													<div class="placeholder-loading"></div>
+													<img src="./assets/images/bai-viet/1.jpg" alt="">
+												</div>
+												<div class="card-body py-3 px-0">
+													<div class="card-title">
+														<div class="placeholder-loading"></div>
+														<h5>
+															Chứng khoán hoá để cứu bất động sản
+														</h5>
+													</div>
+													<div class="card-desc">
+														<div class="placeholder-loading"></div>
+														<p>
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+															Dignissimos, dolore dolores earum enim itaque libero magni
+															omnis
+															possimus quidem quisquam rem rerum ut voluptatibus. Veniam.
+														</p>
+													</div>
+													<div class="card-meta mt-3 pt-3 border-top">
+														<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-between">
+															<li class="card-date">
+																<div class="placeholder-loading"></div>
+																<i class="fad fa-calendar-alt"></i>
+																<span>29-03-2021</span>
+															</li>
+															<li class="card-view">
+																<div class="placeholder-loading"></div>
+																<i class="fad fa-eye"></i>
+																<span>2450</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="mt-4 px-3">
+												<a href="#">
+													Xem thêm các bài viết khác
+													<i class="fas fa-long-arrow-alt-right ml-1"></i>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-6 border-left">
+											<div class="list-card">
+												<div class="card rounded-0 p-3 border-0 card-article_small">
+													<a href="#" data-id="1" class="link-cover"></a>
+													<div class="card-header p-0 rounded-0 bg-white border-0">
+														<img src="./assets/images/bai-viet/1.jpg" alt="">
+													</div>
+													<div class="card-body d-flex justify-content-between flex-column py-0 px-3">
+														<div class="card-title">
+															Sức hút đầu tư bất sản đang đổ về Long An?
+														</div>
+														<div class="card-meta">
+															<ul class="list-unstyled mb-0 d-flex justify-content-between">
+																<li>
+																	<i class="fad fa-calendar-alt"></i>
+																	29-03-2021
+																</li>
+																<li>
+																	<i class="fad fa-eye"></i>
+																	1450
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="card rounded-0 p-3 border-0 card-article_small">
+													<a href="#" data-id="2" class="link-cover"></a>
+													<div class="card-header p-0 rounded-0 bg-white border-0">
+														<img src="./assets/images/bai-viet/1.jpg" alt="">
+													</div>
+													<div class="card-body d-flex justify-content-between flex-column py-0 px-3">
+														<div class="card-title">
+															Cập nhật 6 điểm nóng nhất về bất động sản khắp cả nước
+														</div>
+														<div class="card-meta">
+															<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-between">
+																<li>
+																	<i class="fad fa-calendar-alt"></i>
+																	29-03-2021
+																</li>
+																<li>
+																	<i class="fad fa-eye"></i>
+																	1450
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="card rounded-0 p-3 border-0 card-article_small">
+													<a href="#" data-id="1" class="link-cover"></a>
+													<div class="card-header p-0 rounded-0 bg-white border-0">
+														<img src="./assets/images/bai-viet/1.jpg" alt="">
+													</div>
+													<div class="card-body d-flex justify-content-between flex-column py-0 px-3">
+														<div class="card-title">
+															Sức hút đầu tư bất sản đang đổ về Long An?
+														</div>
+														<div class="card-meta">
+															<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-between">
+																<li>
+																	<i class="fad fa-calendar-alt"></i>
+																	29-03-2021
+																</li>
+																<li>
+																	<i class="fad fa-eye"></i>
+																	1450
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="card rounded-0 p-3 border-0 card-article_small">
+													<a href="#" data-id="2" class="link-cover"></a>
+													<div class="card-header p-0 rounded-0 bg-white border-0">
+														<img src="./assets/images/bai-viet/1.jpg" alt="">
+													</div>
+													<div class="card-body d-flex justify-content-between flex-column py-0 px-3">
+														<div class="card-title">
+															Cập nhật 6 điểm nóng nhất về bất động sản khắp cả nước
+														</div>
+														<div class="card-meta">
+															<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-between">
+																<li>
+																	<i class="fad fa-calendar-alt"></i>
+																	29-03-2021
+																</li>
+																<li>
+																	<i class="fad fa-eye"></i>
+																	1450
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="card rounded-0 p-3 border-0 card-article_small">
+													<a href="#" data-id="1" class="link-cover"></a>
+													<div class="card-header p-0 rounded-0 bg-white border-0">
+														<img src="./assets/images/bai-viet/1.jpg" alt="">
+													</div>
+													<div class="card-body d-flex justify-content-between flex-column py-0 px-3">
+														<div class="card-title">
+															Sức hút đầu tư bất sản đang đổ về Long An?
+														</div>
+														<div class="card-meta">
+															<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-between">
+																<li>
+																	<i class="fad fa-calendar-alt"></i>
+																	29-03-2021
+																</li>
+																<li>
+																	<i class="fad fa-eye"></i>
+																	1450
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="content-article-2">
+							
+							</div>
+							<div class="tab-pane fade" id="content-article-3">
+							
+							</div>
+							<div class="tab-pane fade" id="content-article-4">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-3">
+					<div class="template-3_ads">
+						<div class="ads-banner_item shadow-sm position-relative">
+							<a href="#" class="d-inline-block w-100">
+								<img class="w-100" src="assets/images/quang-cao/1.jpg" alt="">
+							</a>
+						</div>
+						<div class="ads-banner_item shadow-sm position-relative">
+							<a href="#" class="d-inline-block w-100">
+								<img class="w-100" src="assets/images/quang-cao/1.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="template-3_content bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="template-3_heading d-flex align-items-end justify-content-between">
+						<h5>Bất động sản dành cho bạn</h5>
+						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-end">
+							<li>
+								<a href="#">Tin nhà đất bán mới nhất</a>
+							</li>
+							<li>
+								<a href="#">Tin nhà đất cho thuê mới nhất</a>
+							</li>
+						</ul>
+					</div>
+					<div class="template-3_product">
+						<div class="row row-col-10">
+							<div class="col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none col-sm-6 col-md-4 col-lg-3">
+								<div class="card border-0 shadow bg-white card-product">
+									<a href="#" class="favourite" title="Bấm để lưu tin"><i
+											class="far fa-heart"></i></a>
+									<div class="card-header bg-white border-0 rounded-0 p-0">
+										<a href="#" class="link-cover"></a>
+										<img src="./assets/images/san-pham/1.jpg" alt="">
+										<span>4 <i class="far fa-images"></i></span>
+									</div>
+									<div class="card-body p-2">
+										<div class="card-title">
+											<a href="#">
+												Chính chủ cần tiền bán gấp căn hộ 57m2 tại DA Tecco Tower, chỉ cần thanh
+												toán 400tr nhận nhà ở ngay
+											</a>
+										</div>
+										<div class="card-desc">
+											<div class="card-price">
+												Giá thoả thuận
+											</div>
+											<div class="card-acreage">
+												57 m<sup>2</sup>
+											</div>
+										</div>
+										<div class="card-address">
+											<a href="#">Dĩ An</a>
+											<span>, </span>
+											<a href="#">Bình Dương</a>
+										</div>
+										<div class="card-meta">
+											<ul class="list-unstyled mb-0 d-flex justify-content-between">
+												<li>
+													<i class="fad fa-calendar-alt"></i>
+													29-03-2021
+												</li>
+												<li>
+													<i class="fad fa-eye"></i>
+													1450
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col-12">
+							<div class="text-center">
+								<a href="javascript:void(0)" id="load-more" class="btn template-3-btn__outline">Mở rộng
+									<i
+											class="fal fa-angle-down ml-1"></i></a>
+								<a href="#" class="btn template-3-btn__outline d-none">Xem thêm các tin khác <i
+										class="far fa-long-arrow-alt-right ml-1"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="template-3_content bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="template-3_heading">
+						<h5>Bất động sản theo địa điểm</h5>
+					</div>
+					<div class="template-3_list--product">
+						<div class="d-md-flex align-items-stretch justify-content-start">
+							<div class="list-product__item">
+								<div class="card p-0 roudend-0 border-0 bg-white">
+									<a href="#" class="link-cover"></a>
+									<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+									</div>
+									<div class="card-body p-0">
+										<div class="card-title">
+											TP.Hồ Chí Minh
+										</div>
+										<div class="card-desc">
+											78011 tin đăng
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list-product__item">
+								<div class="card p-0 roudend-0 border-0 bg-white">
+									<a href="#" class="link-cover"></a>
+									<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+									</div>
+									<div class="card-body p-0">
+										<div class="card-title">
+											TP.Hồ Chí Minh
+										</div>
+										<div class="card-desc">
+											78011 tin đăng
+										</div>
+									</div>
+								</div>
+								<div class="card p-0 roudend-0 border-0 bg-white">
+									<a href="#" class="link-cover"></a>
+									<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+									</div>
+									<div class="card-body p-0">
+										<div class="card-title">
+											TP.Hồ Chí Minh
+										</div>
+										<div class="card-desc">
+											78011 tin đăng
+										</div>
+									</div>
+								</div>
+								<div class="card p-0 roudend-0 border-0 bg-white">
+									<a href="#" class="link-cover"></a>
+									<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+									</div>
+									<div class="card-body p-0">
+										<div class="card-title">
+											TP.Hồ Chí Minh
+										</div>
+										<div class="card-desc">
+											78011 tin đăng
+										</div>
+									</div>
+								</div>
+								<div class="card p-0 roudend-0 border-0 bg-white">
+									<a href="#" class="link-cover"></a>
+									<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+									</div>
+									<div class="card-body p-0">
+										<div class="card-title">
+											TP.Hồ Chí Minh
+										</div>
+										<div class="card-desc">
+											78011 tin đăng
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="template-3_tags">
+						<div class="swiper-container" id="swiper-tags">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+												Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tag-item">
+										<a href="#" class="d-inline-block">
+											<span>
+											Vinhomes Grand Park
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="template-3_content bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="template-3_heading">
+						<h5>Dự án nổi bật</h5>
+					</div>
+					<div class="template-3_list--product feature-product">
+						<div class="swiper-container" id="swiper-feature">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="list-product__item">
+										<div class="card p-0 roudend-0 border-0 bg-white">
+											<a href="#" class="link-cover"></a>
+											<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+											</div>
+											<div class="card-body p-0">
+												<div class="card-title">
+													Tecco Elite City
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="list-product__item">
+										<div class="card p-0 roudend-0 border-0 bg-white">
+											<a href="#" class="link-cover"></a>
+											<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+											</div>
+											<div class="card-body p-0">
+												<div class="card-title">
+													Meyhomes Captial Phú Quốc
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="list-product__item">
+										<div class="card p-0 roudend-0 border-0 bg-white">
+											<a href="#" class="link-cover"></a>
+											<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+											</div>
+											<div class="card-body p-0">
+												<div class="card-title">
+													Century City
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="list-product__item">
+										<div class="card p-0 roudend-0 border-0 bg-white">
+											<a href="#" class="link-cover"></a>
+											<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+											</div>
+											<div class="card-body p-0">
+												<div class="card-title">
+													Tecco Elite City
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="list-product__item">
+										<div class="card p-0 roudend-0 border-0 bg-white">
+											<a href="#" class="link-cover"></a>
+											<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+											</div>
+											<div class="card-body p-0">
+												<div class="card-title">
+													Meyhomes Captial Phú Quốc
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="list-product__item">
+										<div class="card p-0 roudend-0 border-0 bg-white">
+											<a href="#" class="link-cover"></a>
+											<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+											</div>
+											<div class="card-body p-0">
+												<div class="card-title">
+													Century City
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="list-product__item">
+										<div class="card p-0 roudend-0 border-0 bg-white">
+											<a href="#" class="link-cover"></a>
+											<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+											</div>
+											<div class="card-body p-0">
+												<div class="card-title">
+													Tecco Elite City
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="list-product__item">
+										<div class="card p-0 roudend-0 border-0 bg-white">
+											<a href="#" class="link-cover"></a>
+											<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+											</div>
+											<div class="card-body p-0">
+												<div class="card-title">
+													Meyhomes Captial Phú Quốc
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="list-product__item">
+										<div class="card p-0 roudend-0 border-0 bg-white">
+											<a href="#" class="link-cover"></a>
+											<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+											</div>
+											<div class="card-body p-0">
+												<div class="card-title">
+													Century City
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="template-3_content bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="template-3_heading">
+						<h5>Tin tiêu điểm</h5>
+					</div>
+					<div class="template-3_list--article">
+						<div class="swiper-container" id="swiper-article">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="card p-0 roudend-0 border-0 bg-white">
+										<a href="#" class="link-cover"></a>
+										<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+										</div>
+										<div class="card-body p-0">
+											<span>01.</span>
+											<div class="card-title">
+												Chứng khoán nhọc nhằn leo đỉnh, BĐS lo bong bóng: Có nên rót tiền?
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card p-0 roudend-0 border-0 bg-white">
+										<a href="#" class="link-cover"></a>
+										<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+										</div>
+										<div class="card-body p-0">
+											<span>02.</span>
+											<div class="card-title">
+												Chứng khoán nhọc nhằn leo đỉnh, BĐS lo bong bóng: Có nên rót tiền?
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card p-0 roudend-0 border-0 bg-white">
+										<a href="#" class="link-cover"></a>
+										<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+										</div>
+										<div class="card-body p-0">
+											<span>03.</span>
+											<div class="card-title">
+												Chứng khoán nhọc nhằn leo đỉnh, BĐS lo bong bóng: Có nên rót tiền?
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card p-0 roudend-0 border-0 bg-white">
+										<a href="#" class="link-cover"></a>
+										<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+										</div>
+										<div class="card-body p-0">
+											<span>04.</span>
+											<div class="card-title">
+												Chứng khoán nhọc nhằn leo đỉnh, BĐS lo bong bóng: Có nên rót tiền?
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card p-0 roudend-0 border-0 bg-white">
+										<a href="#" class="link-cover"></a>
+										<div class="card-header p-0 bg-white border-0 rounded-0 position-relative">
+										<span class="image-cover"
+										      style="background-image: url('./assets/images/san-pham/2.jpg')"></span>
+										</div>
+										<div class="card-body p-0">
+											<span>05.</span>
+											<div class="card-title">
+												Chứng khoán nhọc nhằn leo đỉnh, BĐS lo bong bóng: Có nên rót tiền?
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="template-3_content bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="template-3_heading">
+						<h5>Hỗ trợ tiện ích</h5>
+					</div>
+					<ul class="list-unstyled mb-0 template-3_support">
+						<li>
+							<a href="#">
+								<div class="icon"
+								     style="background-image: url('./assets/images/icon/fshome.png')"></div>
+								<div class="title">
+									Xem tuổi xây nhà
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="icon"
+								     style="background-image: url('./assets/images/icon/estimate.png')"></div>
+								<div class="title">
+									Dự tính chi phí làm nhà
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="icon" style="background-image: url('./assets/images/icon/money.png')"></div>
+								<div class="title">
+									Tính lãi suất
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="icon"
+								     style="background-image: url('./assets/images/icon/fengshui.png')"></div>
+								<div class="title">
+									Tư vấn phong thuỷ
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer></footer>
 <script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/plugin/select2/select2.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/jquery-ui/jquery-ui.js"></script>
 <script type="text/javascript" src="./assets/js/theme-script.js"></script>
 
 </body>

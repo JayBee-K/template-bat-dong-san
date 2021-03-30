@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f1e942-59b5-4004-aaa6-832223a03d0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/plugin/jquery-ui/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/plugin/jquery-ui/jquery-ui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/theme-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/theme-script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +16,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,7 +39,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Source-aNeo\template-bat-dong-san" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -39,6 +56,17 @@
       <option name="presentableId" value="Default" />
       <updated>1616579506380</updated>
       <workItem from="1616579507763" duration="1123000" />
+      <workItem from="1616686046252" duration="588000" />
+      <workItem from="1616722924852" duration="172000" />
+      <workItem from="1616932064126" duration="6969000" />
+      <workItem from="1616980199489" duration="161000" />
+      <workItem from="1616981011834" duration="13174000" />
+      <workItem from="1617002782289" duration="1065000" />
+      <workItem from="1617013081124" duration="758000" />
+      <workItem from="1617021022703" duration="8731000" />
+      <workItem from="1617066325207" duration="71000" />
+      <workItem from="1617076253712" duration="3895000" />
+      <workItem from="1617094731593" duration="4994000" />
     </task>
     <servers />
   </component>
