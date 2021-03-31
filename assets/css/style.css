@@ -63,6 +63,11 @@ textarea:focus {
     padding-right: 5px;
 }
 
+@media screen and (min-width: 1199px) {
+    .container {
+        max-width: 1200px;
+    }
+}
 
 .link-cover::after {
     position: absolute;
@@ -218,6 +223,12 @@ textarea:focus {
     margin-bottom: 0;
     font-size: 2em;
     font-weight: 700;
+}
+
+.template-3_heading h5 span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-gray);
 }
 
 .template-3_heading ul li a {
@@ -965,7 +976,7 @@ textarea:focus {
 }
 
 .template-3_content {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .template-3_tab .nav-tabs .nav-link {
@@ -1211,12 +1222,12 @@ textarea:focus {
     margin-top: 15px;
 }
 
-.template-3_product .card-product {
+.template-3_product .card {
     position: relative;
     overflow: hidden;
 }
 
-.template-3_product .card-product .favourite {
+.template-3_product .card .favourite {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -1233,13 +1244,13 @@ textarea:focus {
     z-index: 4;
 }
 
-.template-3_product .card-product .card-header {
+.template-3_product .card .card-header {
     position: relative;
     height: 150px;
     overflow: hidden;
 }
 
-.template-3_product .card-product .card-header:before {
+.template-3_product .card .card-header:before {
     position: absolute;
     height: 40px;
     left: 0;
@@ -1252,7 +1263,7 @@ textarea:focus {
     border-radius: 0 0 0 4px;
 }
 
-.template-3_product .card-product .card-header img {
+.template-3_product .card .card-header img {
     width: 100%;
     object-fit: cover;
     max-width: 100%;
@@ -1261,7 +1272,7 @@ textarea:focus {
     transition: .4s all ease;
 }
 
-.template-3_product .card-product .card-header span {
+.template-3_product .card .card-header span {
     position: absolute;
     z-index: 3;
     bottom: 8px;
@@ -1269,11 +1280,11 @@ textarea:focus {
     color: #fff;
 }
 
-.template-3_product .card-product .card-body .card-title {
+.template-3_product .card .card-body .card-title {
     margin-bottom: 15px;
 }
 
-.template-3_product .card-product .card-body .card-title a {
+.template-3_product .card .card-body .card-title a {
     color: var(--text-dark);
     font-size: 1em;
     transition: .25s all ease;
@@ -1285,18 +1296,18 @@ textarea:focus {
     -webkit-line-clamp: 2;
 }
 
-.template-3_product .card-product .card-body .card-desc {
+.template-3_product .card .card-body .card-desc {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.template-3_product .card-product .card-body .card-desc .card-price {
+.template-3_product .card .card-body .card-desc .card-price {
     color: var(--color-red);
     font-weight: 700;
 }
 
-.template-3_product .card-product .card-body .card-desc .card-acreage {
+.template-3_product .card .card-body .card-desc .card-acreage {
     padding-left: 20px;
     margin-left: 20px;
     font-weight: 700;
@@ -1304,7 +1315,7 @@ textarea:focus {
     position: relative;
 }
 
-.template-3_product .card-product .card-body .card-desc .card-acreage:before {
+.template-3_product .card .card-body .card-desc .card-acreage:before {
     position: absolute;
     display: block;
     content: "";
@@ -1317,32 +1328,32 @@ textarea:focus {
     transform: translateY(-50%);
 }
 
-.template-3_product .card-product .card-body .card-address a {
+.template-3_product .card .card-body .card-address a {
     color: var(--text-gray);
     font-size: .95em;
 }
 
-.template-3_product .card-product .card-body .card-address a:hover {
+.template-3_product .card .card-body .card-address a:hover {
     color: var(--color-hover);
 }
 
-.template-3_product .card-product .card-body .card-meta {
+.template-3_product .card .card-body .card-meta {
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid var(--color-border);
 }
 
-.template-3_product .card-product .card-body .card-meta ul li {
+.template-3_product .card .card-body .card-meta ul li {
     color: var(--text-gray);
     font-size: .95em;
 }
 
-.template-3_product .card-product:hover .card-header img {
+.template-3_product .card:hover .card-header img {
     transform: scale(1.1) rotate(-2deg);
     opacity: .8;
 }
 
-.template-3_product .card-product:hover .card-body .card-title a {
+.template-3_product .card:hover .card-body .card-title a {
     color: var(--color-hover);
 }
 
@@ -1638,6 +1649,7 @@ textarea:focus {
     color: #fff;
     margin-bottom: 12px;
     font-size: .95em;
+    font-weight: 700;
 }
 
 .template-3_footer .footer-name a {
@@ -1752,4 +1764,74 @@ textarea:focus {
 
 .template-3_footer .footer-item .national:hover ul {
     display: block;
+}
+
+.template-3_footer .footer-branch {
+    border-top: 1px solid var(--color-main);
+    padding-top: 23px;
+    margin-top: 23px;
+    position: relative;
+}
+
+.template-3_footer .footer-branch:after {
+    content: '';
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.template-3_footer .footer-branch .branch-toggle {
+    margin-bottom: 20px;
+}
+
+.template-3_footer .footer-branch .branch-toggle a {
+    font-weight: 700;
+    color: #fff;
+    font-size: 1em;
+}
+
+.template-3_footer .footer-branch .branch-toggle a i {
+    margin-left: 8px;
+    transition: .3s all ease;
+}
+
+.template-3_footer .footer-branch .branch-toggle a[aria-expanded="false"] i {
+    transform: rotate(180deg);
+}
+
+.template-3_footer .footer-branch .branch-collapse .branch-item {
+    margin-bottom: 10px;
+}
+
+.template-3_footer .footer-branch .branch-collapse .branch-item .branch-name {
+    font-weight: 700;
+    font-size: .95em;
+    color: #fff;
+}
+
+.template-3_footer .footer-branch .branch-collapse .branch-item .branch-address {
+    color: #fff;
+    font-size: .95em;
+}
+
+.template-3_footer .footer-information {
+    border-top: 1px solid var(--color-main);
+    padding-top: 23px;
+    margin-top: 23px;
+    position: relative;
+    font-size: .90em;
+    color: #fff;
+}
+
+.template-3_footer .footer-information:after {
+    content: '';
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
 }
