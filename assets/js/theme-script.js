@@ -28,7 +28,6 @@ $(document).ready(function () {
 	});
 	
 	
-	
 	function loadBaiViet(id_article) {
 		// Xử lý lấy ra các trường dữ liệu cần thiết của bài viết
 		let link_article = 'javascript:void(0)',
@@ -149,6 +148,54 @@ $(document).ready(function () {
 				},
 				1024: {
 					slidesPerView: 3,
+				},
+			}
+		})
+	}
+	
+	if ($('#swiper-article-2').length > 0) {
+		const article_2 = new Swiper('#swiper-article-2', {
+			slidesPerView: 4,
+			spaceBetween: 15,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+				},
+				600: {
+					slidesPerView: 2,
+				},
+				1024: {
+					slidesPerView: 4,
+				},
+			}
+		})
+	}
+	
+	if ($('#swiper-partner').length > 0) {
+		const tags = new Swiper('#swiper-partner', {
+			slidesPerView: 6,
+			spaceBetween: 10,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 2,
+				},
+				768: {
+					slidesPerView: 4,
+				},
+				1024: {
+					slidesPerView: 6,
 				},
 			}
 		})
