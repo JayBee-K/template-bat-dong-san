@@ -27,7 +27,6 @@ $(document).ready(function () {
 		callMenu();
 	});
 	
-	
 	function loadBaiViet(id_article) {
 		// Xử lý lấy ra các trường dữ liệu cần thiết của bài viết
 		let link_article = 'javascript:void(0)',
@@ -198,6 +197,21 @@ $(document).ready(function () {
 					slidesPerView: 6,
 				},
 			}
+		})
+	}
+	
+	if ($('#swiper-project').length > 0) {
+		const project = new Swiper('#swiper-project', {
+			loop: true,
+			slidesPerView: 1,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
 		})
 	}
 	
