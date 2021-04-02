@@ -1199,7 +1199,7 @@ textarea:focus {
     transform: scale(1.2) rotate(-2deg);
     opacity: .8;
 }
-
+/*
 .template-3_article-2 .card .card-header {
     height: 175px;
     position: relative;
@@ -1247,6 +1247,7 @@ textarea:focus {
 .template-3_article-2 .card:hover .card-body .card-title {
     color: var(--color-hover);
 }
+*/
 
 .template-3_ads {
     padding-top: 5px;
@@ -1589,6 +1590,7 @@ textarea:focus {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+/*
 .template-3_list--article .card .card-header {
     position: relative;
     height: 200px;
@@ -1679,6 +1681,7 @@ textarea:focus {
 .template-3_support > li > a:hover {
     opacity: .9;
 }
+ */
 
 .template-3_partner .partner-item {
     border: 1px solid var(--color-border);
