@@ -2359,11 +2359,12 @@ textarea:focus {
     -webkit-line-clamp: 3;
 }
 
-.toggle-expandedList i {
+.template-3_collapse i {
     transition: .2s all ease;
 }
 
-.toggle-expandedList.active i {
+.template-3_collapse[aria-expanded=true] i,
+.template-3_collapse.active i {
     transform: rotate(180deg);
 }
 
@@ -2385,7 +2386,6 @@ textarea:focus {
     background: var(--color-hover);
 }
 
-
 .list-article_title li a {
     font-size: 1em;
     color: var(--text-gray);
@@ -2404,4 +2404,23 @@ textarea:focus {
 
 .template-3_pagination ul li.active a {
     font-weight: 700;
+}
+
+.template-3_img-preview {
+    text-align: center;
+}
+
+.template-3_img-preview img {
+    max-height: 60px;
+    width: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.template-3_iframe iframe {
+    width: 100%;
+    display: block;
+    vertical-align: middle;
 }
