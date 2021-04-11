@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f1e942-59b5-4004-aaa6-832223a03d0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cho-thue-can-ho.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nha-dat-ban.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/logo-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/theme-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/theme-script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chi-tiet-nha-dat-ban.html" beforeDir="false" afterPath="$PROJECT_DIR$/chi-tiet-nha-dat-ban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chu-dau-tu-khu-cong-nghiep.html" beforeDir="false" afterPath="$PROJECT_DIR$/chu-dau-tu-khu-cong-nghiep.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dang-tin.html" beforeDir="false" afterPath="$PROJECT_DIR$/dang-tin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/du-an-bat-dong-san.html" beforeDir="false" afterPath="$PROJECT_DIR$/du-an-bat-dong-san.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nha-moi-gioi.html" beforeDir="false" afterPath="$PROJECT_DIR$/nha-moi-gioi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thiet-ke-khu-cong-nghiep.html" beforeDir="false" afterPath="$PROJECT_DIR$/thiet-ke-khu-cong-nghiep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tien-do-khu-cong-nghiep.html" beforeDir="false" afterPath="$PROJECT_DIR$/tien-do-khu-cong-nghiep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tong-quan-khu-cong-nghiep.html" beforeDir="false" afterPath="$PROJECT_DIR$/tong-quan-khu-cong-nghiep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vi-tri-khu-cong-nghiep.html" beforeDir="false" afterPath="$PROJECT_DIR$/vi-tri-khu-cong-nghiep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video-khu-cong-nghiep.html" beforeDir="false" afterPath="$PROJECT_DIR$/video-khu-cong-nghiep.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +49,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../template-admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -84,6 +97,17 @@
       <workItem from="1617762241901" duration="832000" />
       <workItem from="1617786880635" duration="4032000" />
       <workItem from="1617805810426" duration="1324000" />
+      <workItem from="1617843993831" duration="252000" />
+      <workItem from="1617867273657" duration="9243000" />
+      <workItem from="1617953704216" duration="1172000" />
+      <workItem from="1617962556254" duration="1389000" />
+      <workItem from="1618016917317" duration="133000" />
+      <workItem from="1618022055284" duration="2095000" />
+      <workItem from="1618024324892" duration="285000" />
+      <workItem from="1618025414209" duration="1280000" />
+      <workItem from="1618043841625" duration="10205000" />
+      <workItem from="1618110396136" duration="13595000" />
+      <workItem from="1618134822420" duration="7811000" />
     </task>
     <servers />
   </component>

@@ -51,209 +51,856 @@
 	</style>
 </head>
 <body>
+<div class="template-3_modal">
+	<div class="modal fade modal-theme" id="modalLogin" tabindex="-1" role="dialog" aria-modal="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header position-relative">
+					<div class="heading text-center position-relative pb-3">
+						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h4 mb-3">Đăng nhập
+						</h2>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fal fa-times">
+						</i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" id="">
+						<div class="mb-3">
+							<div class="form-floating">
+								<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+								       class="form-control">
+								<label for="" class="form-label">Tên đăng nhập/email</label>
+							</div>
+						</div>
+						<div class="mb-3">
+							<div class="form-floating">
+								<input type="password" autocomplete="off" placeholder="Không được bỏ trống"
+								       class="form-control">
+								<label for="" class="form-label">Mật khẩu</label>
+							</div>
+						</div>
+						<div class="text-center mt-5">
+							<button type="submit" class="btn btn-theme w-auto bg-gradient">
+								<span>Đăng nhập</span>
+							</button>
+						</div>
+						<div class="row mt-2">
+							<div class="col-md-6">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">
+										Lưu mật khẩu
+									</label>
+								</div>
+							</div>
+							<div class="col-md-6 text-right">
+								<a href="javascript:void(0)" data-modal="modalForgot" class="callModal">Quên mật
+									khẩu</a>
+							</div>
+						</div>
+						<div class="divider">
+							<span class="left"></span>
+							<span class="d-block mx-3">Hoặc</span>
+							<span class="right"></span>
+						</div>
+						<div class="d-flex mt-4 align-items-center justify-content-center my-4">
+							<a href="javascript:void(0)" class="btn-social bg-gradient btn-facebook">
+								<i class="fab fa-facebook-f"></i>
+								Facebook
+							</a>
+							<button type="button" class="btn-social bg-gradient btn-google">
+								<i class="fab fa-google-plus-g"></i>
+								Google
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer bg-light border-top px-4 py-3 justify-content-center">
+					<p>
+						Chưa phải thành viên?
+						<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+						   data-modal="modalRegister">Click vào đây để đăng ký</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-theme" id="modalRegister" tabindex="-1" role="dialog" aria-modal="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header position-relative">
+					<div class="heading text-center position-relative pb-3">
+						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h4 mb-3">Đăng ký tài khoản
+						</h2>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fal fa-times">
+						</i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" id="">
+						<div class="row row-10 align-items-center">
+							<div class="col-md-6">
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">Tên đăng nhập <span class="color-red">*</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="email" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">Địa chỉ email <span class="color-red">*</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="password" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">Mật khẩu <span
+												class="color-red">*</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="password" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">Nhập lại mật khẩu <span
+												class="color-red">*</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">Tên đầy đủ <span
+												class="color-red">*</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="date" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">Ngày sinh</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="mb-3 text-right">
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" checked type="radio" name="sex" id="sex01"
+										       value="1">
+										<label class="form-check-label" for="sex01">Nam</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="sex" id="sex02" value="2">
+										<label class="form-check-label" for="sex02">Nữ</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="mb-3">
+									<div class="form-floating">
+										<select name="" class="form-select form-control" id="">
+											<option value="">-- Tỉnh thành ---</option>
+											<option value="">Trên toàn quốc</option>
+											<option value="">Hồ Chí Minh</option>
+											<option value="">Hà Nội</option>
+											<option value="">Đà Nẵng</option>
+											<option value="">Cần Thơ</option>
+											<option value="">Hồ Chí Minh</option>
+											<option value="">Hà Nội</option>
+											<option value="">Đà Nẵng</option>
+											<option value="">Cần Thơ</option>
+											<option value="">Hồ Chí Minh</option>
+											<option value="">Hà Nội</option>
+											<option value="">Đà Nẵng</option>
+											<option value="">Cần Thơ</option>
+										</select>
+										<label for="" class="form-label">Tỉnh thành <span
+												class="color-red">*</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="mb-3">
+									<div class="form-floating">
+										<select name="" class="form-select form-control" id="">
+											<option value="">-- Quận huyện ---</option>
+											<option value="">Trên toàn quốc</option>
+											<option value="">Hồ Chí Minh</option>
+											<option value="">Hà Nội</option>
+											<option value="">Đà Nẵng</option>
+											<option value="">Cần Thơ</option>
+											<option value="">Hồ Chí Minh</option>
+											<option value="">Hà Nội</option>
+											<option value="">Đà Nẵng</option>
+											<option value="">Cần Thơ</option>
+											<option value="">Hồ Chí Minh</option>
+											<option value="">Hà Nội</option>
+											<option value="">Đà Nẵng</option>
+											<option value="">Cần Thơ</option>
+										</select>
+										<label for="" class="form-label">Quận huyện <span
+												class="color-red">*</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="mb-3">
+									<div class="form-floating">
+										<select name="" class="form-select form-control" id="">
+											<option value="">-- Phường/xã ---</option>
+											<option value="">Trên toàn quốc</option>
+											<option value="">Hồ Chí Minh</option>
+											<option value="">Hà Nội</option>
+											<option value="">Đà Nẵng</option>
+											<option value="">Cần Thơ</option>
+											<option value="">Hồ Chí Minh</option>
+											<option value="">Hà Nội</option>
+											<option value="">Đà Nẵng</option>
+											<option value="">Cần Thơ</option>
+											<option value="">Hồ Chí Minh</option>
+											<option value="">Hà Nội</option>
+											<option value="">Đà Nẵng</option>
+											<option value="">Cần Thơ</option>
+										</select>
+										<label for="" class="form-label">Phường/xã <span
+												class="color-red">*</span></label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-6">
+								<div class="mb-3">
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" checked type="radio" name="employer"
+										       id="employer01"
+										       value="1">
+										<label class="form-check-label" for="employer01">Cá nhân</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="employer" id="employer02"
+										       value="2">
+										<label class="form-check-label" for="employer02">Công ty</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">Mã số thuế</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="row row-10 align-items-center">
+									<div class="col-md-7">
+										<div class="mb-3">
+											<div class="form-floating">
+												<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+												       class="form-control">
+												<label for="" class="form-label">Nhập mã xác nhận</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-5">
+										<div class="mb-3">
+											<div class="d-flex align-items-center justify-content-end">
+												<img class="captcha" src="./assets/images/Captcha.jpg" alt="">
+												<a href="" class="h5 mb-0 ml-3 d-inline-block text-success"><i
+														class="fas fa-sync-alt"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="text-muted mt-3 mb-3">
+									Bằng cách nhấn vào Đăng ký, bạn đồng ý với các <a href="#">Điều khoản thỏa thuận</a>,
+									<a href="#">Quy chế hoạt động</a>, <a href="#">Chính sách bảo mật thông tin</a>, <a
+										href="#">Cơ chế giải quyết khiếu nại</a>, Quy định về báo giá và hỗ trợ và các
+									quy định có liên quan khác được công khai trên Batdongsan.com.vn.
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="text-center mt-5">
+									<button type="submit" class="btn btn-theme w-auto bg-gradient">
+										<span>Đăng ký tài khoản</span>
+									</button>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="text-muted mt-3 mb-3">
+									<p><span class="font-weight-bold color-red">Chú ý:</span> Thông tin Tên đăng nhập,
+										email, số điện thoại di động không thể thay đổi sau khi đăng ký.</p>
+									<p>Để được trợ giúp vui lòng liên hệ tổng đài CSKH <a href="#">1900 1881</a> hoặc
+										email <a href="#">hotro@batdongsan.com.vn</a></p>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer bg-light border-top px-4 py-3 justify-content-center">
+					<p>
+						Đã là thành viên?
+						<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+						   data-modal="modalLogin">Click vào đây để đăng nhập</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-theme" id="modalForgot" tabindex="-1" role="dialog" aria-modal="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header position-relative">
+					<div class="heading text-center position-relative pb-3">
+						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h4 mb-3">Quên mật khẩu
+						</h2>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fal fa-times">
+						</i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" id="">
+						<div class="mb-3">
+							<div class="form-floating">
+								<input type="email" autocomplete="off" placeholder="Không được bỏ trống"
+								       class="form-control">
+								<label for="" class="form-label">Nhập email của bạn <span
+										class="color-red">*</span></label>
+							</div>
+						</div>
+						<div class="row row-10 align-items-center">
+							<div class="col-md-6">
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">Nhập mã xác nhận</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<div class="d-flex align-items-center justify-content-end">
+										<img class="captcha" src="./assets/images/Captcha.jpg" alt="">
+										<a href="" class="h5 mb-0 ml-3 d-inline-block text-success"><i
+												class="fas fa-sync-alt"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="text-center mt-5">
+								<button type="submit" class="btn btn-theme w-auto bg-gradient">
+									<span>Lấy lại mật khẩu</span>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer bg-light border-top px-4 py-3 justify-content-center">
+					<p>
+						Chưa phải là thành viên?
+						<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+						   data-modal="modalRegister">Click vào đây để đăng ký</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-theme" id="mailContact" tabindex="-1" role="dialog" aria-modal="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header position-relative">
+					<div class="heading text-center position-relative pb-3">
+						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h4 mb-3">Thông tin liên hệ
+						</h2>
+						<p class="modal-text heading-desc text-black-50 mb-3">
+							Yêu cầu người đăng tin liên hệ theo thông tin dưới đây.
+						</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fal fa-times">
+						</i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" id="">
+						<div class="mb-3">
+							<div class="form-floating">
+								<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+								       class="form-control">
+								<label for="" class="form-label">Họ & Tên</label>
+							</div>
+						</div>
+						<div class="mb-3">
+							<div class="form-floating">
+								<input type="tel" autocomplete="off" placeholder="Không được bỏ trống"
+								       class="form-control">
+								<label for="" class="form-label">SĐT <span class="color-red">*</span></label>
+							</div>
+						</div>
+						<div class="mb-3">
+							<div class="form-floating">
+								<input type="email" autocomplete="off" placeholder="Không được bỏ trống"
+								       class="form-control">
+								<label for="emailLogin" class="form-label">Email</label>
+							</div>
+						</div>
+						<div class="mb-3">
+							<div class="form-floating">
+								<textarea name="" id="" class="form-control" rows="4">Tôi có quan tâm đến bất động sản này.</textarea>
+								<label for="emailLogin" class="form-label">Lời nhắn</label>
+							</div>
+						</div>
+						<div class="text-center mt-4">
+							<button type="submit" class="btn btn-theme w-auto bg-gradient">
+								<span>Gửi yêu cầu</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modal-theme" id="modalReport" tabindex="-1" role="dialog" aria-modal="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header position-relative">
+					<div class="heading text-center position-relative pb-3">
+						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h4 mb-3">Tin rao có các
+							thông tin không đúng:</h2>
+						<ul class="nav nav-tabs mb-3">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#tab-modal--info">Tin rao</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#tab-modal--map">Bản đồ</a>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fal fa-times">
+						</i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="tab-content">
+						<div id="tab-modal--info" class="tab-pane fade show active">
+							<form action="">
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-1">
+									<label class="form-check-label" for="check-1">Địa chỉ của bất động sản
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-2">
+									<label class="form-check-label" for="check-2">Các thông tin về đặc điểm: giá, diện
+										tích, mô tả ....
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-3">
+									<label class="form-check-label" for="check-3">Ảnh
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-4">
+									<label class="form-check-label" for="check-4">Trùng với tin rao khác
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-5">
+									<label class="form-check-label" for="check-5">Không liên lạc được
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-6">
+									<label class="form-check-label" for="check-6">Tin không có thật
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-7">
+									<label class="form-check-label" for="check-7">Bất động sản đã bán
+									</label>
+								</div>
+								<div class="mb-3 mt-4">
+									<div class="form-floating">
+										<textarea name="" id="" class="form-control" rows="4">Vui lòng nhập ít nhất 20 ký tự...</textarea>
+										<label for="emailLogin" class="form-label">Phản hồi khác</label>
+									</div>
+								</div>
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">Họ & Tên</label>
+									</div>
+								</div>
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="tel" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">SĐT <span class="color-red">*</span></label>
+									</div>
+								</div>
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="email" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="emailLogin" class="form-label">Email <span
+												class="color-red">*</span></label>
+									</div>
+								</div>
+								<div class="text-center mt-4">
+									<button type="submit" class="btn btn-theme w-auto bg-gradient">
+										<span>Gửi</span>
+									</button>
+								</div>
+							</form>
+						</div>
+						<div id="tab-modal--map" class="tab-pane fade">
+							<form action="">
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-21">
+									<label class="form-check-label" for="check-21">Tốc độ load chậm
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-22">
+									<label class="form-check-label" for="check-22">Vị trí bất động sản chưa chính xác
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-23">
+									<label class="form-check-label" for="check-23">Vị trí tiện ích chưa chính xác
+									</label>
+								</div>
+								<div class="form-check mb-2">
+									<input type="checkbox" class="form-check-input" id="check-24">
+									<label class="form-check-label" for="check-24">Bản đồ lỗi
+									</label>
+								</div>
+								<div class="mb-3 mt-4">
+									<div class="form-floating">
+										<textarea name="" id="" class="form-control" rows="4">Vui lòng nhập ít nhất 20 ký tự...</textarea>
+										<label class="form-label">Phản hồi khác</label>
+									</div>
+								</div>
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="text" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">Họ & Tên</label>
+									</div>
+								</div>
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="tel" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label for="" class="form-label">SĐT <span class="color-red">*</span></label>
+									</div>
+								</div>
+								<div class="mb-3">
+									<div class="form-floating">
+										<input type="email" autocomplete="off" placeholder="Không được bỏ trống"
+										       class="form-control">
+										<label class="form-label">Email <span class="color-red">*</span></label>
+									</div>
+								</div>
+								<div class="text-center mt-4">
+									<button type="submit" class="btn btn-theme w-auto bg-gradient">
+										<span>Gửi</span>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <header class="shadow-lg bg-white position-relative template-3_header">
 	<div class="container-fluid">
 		<div class="row row-10 align-items-lg-center">
 			<div class="col-lg-1">
+				<div class="header-overlay"></div>
+				<div class="header-action--hamburger d-block d-lg-none">
+					<div id="hamburger" class="hamburger">
+						<span></span>
+					</div>
+				</div>
 				<div class="header-logo">
 					<a href="index.html" class="d-inline-block">
-						<img src="./assets/images/logo.svg" alt="">
+						<img src="./assets/images/logo.svg" class="d-none d-lg-block" alt="">
+						<img src="./assets/images/logo-white.svg" class="d-block d-lg-none" alt="">
+					</a>
+				</div>
+				<div class="header-action--mobile d-block d-lg-none">
+					<a href="#" title="Danh sách tin đã lưu">
+						<i class="far fa-heart"></i>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-8">
 				<div class="header-navigation">
-					<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-start">
-						<li>
-							<a href="#">
-								Nhà đất bán
-								<i class="fal fa-angle-down"></i>
-							</a>
-							<ul class="list-unstyled mb-0">
+					<div class="header-action d-block d-lg-none">
+						<div class="container p-2">
+							<div class="row row-10">
+								<div class="col-6 mb-3">
+									<a href="#modalLogin" data-toggle="modal" class="btn btn-theme bg-gradient">
+										Đăng nhập
+									</a>
+								</div>
+								<div class="col-6 mb-3">
+									<a href="#modalRegister" data-toggle="modal"
+									   class="btn btn-theme btn-theme-outline bg-gradient">
+										Đăng ký
+									</a>
+								</div>
+								<div class="col-12">
+									<a href="dang-tin.html" class="btn btn-theme btn-theme-outline bg-gradient">
+										Đăng tin
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-navigation--inner">
+						<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-start" id="hasMenu">
+							<li>
+								<a href="#">
+									Nhà đất bán
+									<i class="fal fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">Bán căn hộ chung cư</a>
+									</li>
+									<li>
+										<a href="#">Bán căn hộ chung cư</a>
+									</li>
+									<li>
+										<a href="#">Bán căn hộ chung cư</a>
+									</li>
+									<li>
+										<a href="#">Bán căn hộ chung cư</a>
+									</li>
+									<li>
+										<a href="#">Bán căn hộ chung cư</a>
+									</li>
+									<li>
+										<a href="#">Bán căn hộ chung cư</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Nhà đất cho thuê
+									<i class="fal fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">Cho thuê căn hộ chung cư</a>
+									</li>
+									<li>
+										<a href="#">Cho thuê căn hộ chung cư</a>
+									</li>
+									<li>
+										<a href="#">Cho thuê căn hộ chung cư</a>
+									</li>
+									<li>
+										<a href="#">Cho thuê căn hộ chung cư</a>
+									</li>
+									<li>
+										<a href="#">Cho thuê căn hộ chung cư</a>
+									</li>
+									<li>
+										<a href="#">Cho thuê căn hộ chung cư</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Dự án
+									<i class="fal fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">Căn hộ, chung cư</a>
+									</li>
+									<li>
+										<a href="#">Căn hộ, chung cư</a>
+									</li>
+									<li>
+										<a href="#">Căn hộ, chung cư</a>
+									</li>
+									<li>
+										<a href="#">Căn hộ, chung cư</a>
+									</li>
+									<li>
+										<a href="#">Căn hộ, chung cư</a>
+									</li>
+									<li>
+										<a href="#">Căn hộ, chung cư</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Cần mua, cần thuê
+									<i class="fal fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">Nhà đất cần mua <i class="fal fa-angle-right"></i></a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="#">Mua căn hộ chung cư</a>
+											</li>
+											<li>
+												<a href="#">Mua nhà riêng</a>
+											</li>
+											<li>
+												<a href="#">Mua căn hộ chung cư</a>
+											</li>
+											<li>
+												<a href="#">Mua nhà riêng</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Nhà đất cần mua <i class="fal fa-angle-right"></i></a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="#">Mua căn hộ chung cư</a>
+											</li>
+											<li>
+												<a href="#">Mua nhà riêng</a>
+											</li>
+											<li>
+												<a href="#">Mua căn hộ chung cư</a>
+											</li>
+											<li>
+												<a href="#">Mua nhà riêng</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Tin tức
+									<i class="fal fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">BĐS & Covid 19</a>
+									</li>
+									<li>
+										<a href="#">Tin thị trường</a>
+									</li>
+									<li><a href="#">Interaktive Story</a></li>
+									<li><a href="#">Phân tích - nhận định</a></li>
+									<li><a href="#">Chính sách - Quản lý</a></li>
+									<li><a href="#">Thông tin quy hoạch</a></li>
+									<li><a href="#">Bất động sản thế giới</a></li>
+									<li><a href="#">Tài chính - Chứng khoán - BĐS</a></li>
+									<li>
+										<a href="#">Tư vấn luật <i class="fal fa-angle-right"></i></a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="#"> Trình tự, thủ tục</a>
+											</li>
+											<li>
+												<a href="#">Quyền sở hữu</a>
+											</li>
+											<li>
+												<a href="#">Tranh chấp</a>
+											</li>
+											<li>
+												<a href="#">Xây dựng - Hoàn công</a>
+											</li>
+											<li>
+												<a href="#">Nghĩa vụ tài chính</a>
+											</li>
+											<li>
+												<a href="#">Các vấn đề có yếu tố nước ngoài</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Tư vấn luật <i class="fal fa-angle-right"></i></a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="#"> Trình tự, thủ tục</a>
+											</li>
+											<li>
+												<a href="#">Quyền sở hữu</a>
+											</li>
+											<li>
+												<a href="#">Tranh chấp</a>
+											</li>
+											<li>
+												<a href="#">Xây dựng - Hoàn công</a>
+											</li>
+											<li>
+												<a href="#">Nghĩa vụ tài chính</a>
+											</li>
+											<li>
+												<a href="#">Các vấn đề có yếu tố nước ngoài</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Nội - Ngoại thất</a></li>
+							<li><a href="#">Phong thuỷ</a></li>
+							<li><a href="#">Danh bạ</a></li>
+						</ul>
+						<div class="header-list d-block d-lg-none">
+							<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-start">
 								<li>
-									<a href="#">Bán căn hộ chung cư</a>
+									<a href="">Đăng ký nhận tin bất động sản</a>
 								</li>
 								<li>
-									<a href="#">Bán căn hộ chung cư</a>
+									<a href="">Góp ý báo lỗi</a>
 								</li>
 								<li>
-									<a href="#">Bán căn hộ chung cư</a>
+									<a href="">Trò chuyện cùng chúng tôi</a>
 								</li>
 								<li>
-									<a href="#">Bán căn hộ chung cư</a>
+									<a href="">Giới thiệu về chúng tôi</a>
 								</li>
 								<li>
-									<a href="#">Bán căn hộ chung cư</a>
-								</li>
-								<li>
-									<a href="#">Bán căn hộ chung cư</a>
+									<a href="">Liên hệ</a>
 								</li>
 							</ul>
-						</li>
-						<li>
-							<a href="#">
-								Nhà đất cho thuê
-								<i class="fal fa-angle-down"></i>
-							</a>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">Cho thuê căn hộ chung cư</a>
-								</li>
-								<li>
-									<a href="#">Cho thuê căn hộ chung cư</a>
-								</li>
-								<li>
-									<a href="#">Cho thuê căn hộ chung cư</a>
-								</li>
-								<li>
-									<a href="#">Cho thuê căn hộ chung cư</a>
-								</li>
-								<li>
-									<a href="#">Cho thuê căn hộ chung cư</a>
-								</li>
-								<li>
-									<a href="#">Cho thuê căn hộ chung cư</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								Dự án
-								<i class="fal fa-angle-down"></i>
-							</a>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">Căn hộ, chung cư</a>
-								</li>
-								<li>
-									<a href="#">Căn hộ, chung cư</a>
-								</li>
-								<li>
-									<a href="#">Căn hộ, chung cư</a>
-								</li>
-								<li>
-									<a href="#">Căn hộ, chung cư</a>
-								</li>
-								<li>
-									<a href="#">Căn hộ, chung cư</a>
-								</li>
-								<li>
-									<a href="#">Căn hộ, chung cư</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								Cần mua, cần thuê
-								<i class="fal fa-angle-down"></i>
-							</a>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">Nhà đất cần mua <i class="fal fa-angle-right"></i></a>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<a href="#">Mua căn hộ chung cư</a>
-										</li>
-										<li>
-											<a href="#">Mua nhà riêng</a>
-										</li>
-										<li>
-											<a href="#">Mua căn hộ chung cư</a>
-										</li>
-										<li>
-											<a href="#">Mua nhà riêng</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Nhà đất cần mua <i class="fal fa-angle-right"></i></a>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<a href="#">Mua căn hộ chung cư</a>
-										</li>
-										<li>
-											<a href="#">Mua nhà riêng</a>
-										</li>
-										<li>
-											<a href="#">Mua căn hộ chung cư</a>
-										</li>
-										<li>
-											<a href="#">Mua nhà riêng</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								Tin tức
-								<i class="fal fa-angle-down"></i>
-							</a>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">BĐS & Covid 19</a>
-								</li>
-								<li>
-									<a href="#">Tin thị trường</a>
-								</li>
-								<li><a href="#">Interaktive Story</a></li>
-								<li><a href="#">Phân tích - nhận định</a></li>
-								<li><a href="#">Chính sách - Quản lý</a></li>
-								<li><a href="#">Thông tin quy hoạch</a></li>
-								<li><a href="#">Bất động sản thế giới</a></li>
-								<li><a href="#">Tài chính - Chứng khoán - BĐS</a></li>
-								<li>
-									<a href="#">Tư vấn luật <i class="fal fa-angle-right"></i></a>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<a href="#"> Trình tự, thủ tục</a>
-										</li>
-										<li>
-											<a href="#">Quyền sở hữu</a>
-										</li>
-										<li>
-											<a href="#">Tranh chấp</a>
-										</li>
-										<li>
-											<a href="#">Xây dựng - Hoàn công</a>
-										</li>
-										<li>
-											<a href="#">Nghĩa vụ tài chính</a>
-										</li>
-										<li>
-											<a href="#">Các vấn đề có yếu tố nước ngoài</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Tư vấn luật <i class="fal fa-angle-right"></i></a>
-									<ul class="list-unstyled mb-0">
-										<li>
-											<a href="#"> Trình tự, thủ tục</a>
-										</li>
-										<li>
-											<a href="#">Quyền sở hữu</a>
-										</li>
-										<li>
-											<a href="#">Tranh chấp</a>
-										</li>
-										<li>
-											<a href="#">Xây dựng - Hoàn công</a>
-										</li>
-										<li>
-											<a href="#">Nghĩa vụ tài chính</a>
-										</li>
-										<li>
-											<a href="#">Các vấn đề có yếu tố nước ngoài</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li><a href="#">Nội - Ngoại thất</a></li>
-						<li><a href="#">Phong thuỷ</a></li>
-						<li><a href="#">Danh bạ</a></li>
-					</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-3">
@@ -280,6 +927,14 @@
 					</ul>
 				</div>
 			</div>
+			<div class="col-12 d-block d-lg-none">
+				<div class="template-3_search" id="callSearch">
+					<div class="inner">
+						<i class="fas fa-search"></i>
+						<span>Tìm kiếm địa điểm, khu vực</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
@@ -289,6 +944,9 @@
 		      style="background-image: url('./assets/images/banner/banner-webjpg-17120815565823395.jpg')"></span>
 		<div class="template-3_form">
 			<form action="">
+				<div class="close-search d-block d-lg-none">
+					<a href="javascript:void(0)" id="closeSearch"><i class="fal fa-times"></i></a>
+				</div>
 				<div class="search-index">
 					<ul class="list-unstyled mb-0 search-tab">
 						<li class="active">Nhà đất bán</li>
@@ -469,7 +1127,7 @@
 									<option value="">Dự án 10</option>
 								</select>
 							</div>
-							<div class="search-bottom_item">
+							<div class="search-bottom_item d-none d-lg-block">
 								<div class="search-bottom_item--action d-flex align-items-center justify-content-end">
 									<a href="#searchButtonExpanded" data-toggle="collapse"
 									   class="expand-collapse text-white"><i
@@ -480,7 +1138,7 @@
 							</div>
 						</div>
 						<div class="collapse" id="searchButtonExpanded">
-							<div class="search-bottom mt-3">
+							<div class="search-bottom mt-1 mt-lg-3">
 								<div class="search-bottom_item">
 									<select name="" id="" class="template-3_select2">
 										<option value="">Trên toàn quốc</option>
@@ -556,6 +1214,15 @@
 								</div>
 							</div>
 						</div>
+						<div class="search-bottom_item d-block d-lg-none pb-3">
+							<div class="search-bottom_item--action d-flex align-items-center justify-content-end">
+								<a href="#searchButtonExpanded" data-toggle="collapse"
+								   class="expand-collapse text-white"><i
+										class="fal fa-angle-down mr-2"></i>Thêm</a>
+								<a href="javascript:void(0)" class="text-white ml-4"><i
+										class="fal fa-sync mr-2"></i>Xoá</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</form>
@@ -604,7 +1271,7 @@
 								</a>
 							</li>
 						</ul>
-						<div class="border bg-white p-4 position-relative">
+						<div class="border bg-white p-lg-3 p-2 position-relative">
 							<div class="row">
 								<div class="col-12">
 									<div class="template-3_map">
@@ -1245,7 +1912,7 @@
 	</div>
 	<div class="template-3_content bg-light">
 		<div class="container">
-			<div class="row row-cols-5">
+			<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
 				<div class="col">
 					<div class="py-1">
 						<a href="#" class="text-dark small-text">
@@ -1945,7 +2612,7 @@
 				</div>
 				<div class="col-md-8 footer-mt">
 					<div class="row no-gutters">
-						<div class="col-md-3">
+						<div class="col-lg-3 col-sm-6">
 							<div class="footer-item">
 								<h6 class="footer-title text-white font-weight-bold">
 									Hướng dẫn
@@ -1972,7 +2639,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-lg-3 col-sm-6">
 							<div class="footer-item">
 								<h6 class="footer-title text-white font-weight-bold">
 									Quy định
@@ -1999,7 +2666,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-lg-3 col-sm-6 mt-4 mt-lg-0">
 							<div class="footer-item">
 								<h6 class="footer-title text-white font-weight-bold">
 									Tổng đài hỗ trợ
@@ -2032,7 +2699,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-lg-3 col-sm-6 mt-4 mt-lg-0">
 							<div class="footer-item">
 								<h6 class="footer-title text-white font-weight-bold">
 									Quốc gia
