@@ -1820,6 +1820,10 @@ textarea:focus {
     -webkit-filter: grayscale(0);
 }
 
+.template-3_footer .footer-logo a img {
+    height: 60px;
+}
+
 .template-3_footer .footer-title {
     font-size: 1.05em;
 }
@@ -3438,10 +3442,11 @@ textarea:focus {
     .template-3_banner .template-3_form {
         position: fixed;
         top: 0 !important;
-        left: 0;
+        left: unset;
+        transform: translateX(0);
+        right: -140%;
         width: 100%;
-        z-index: -1;
-        transform: scale(0);
+        z-index: 1;
         transition: .4s all ease-in;
         height: 100vh;
         background: #fff;
@@ -3509,7 +3514,7 @@ textarea:focus {
     }
 
     .show-search .template-3_banner .template-3_form {
-        transform: scale(1);
+        right: 0;
         z-index: 1;
     }
 }
@@ -3806,5 +3811,27 @@ textarea:focus {
 
     .template-3-heading-w100 {
         width: 100%;
+    }
+
+    .template-3_product .card .card-header {
+        height: 200px;
+    }
+
+    .template-3_list--product.feature-product .swiper-slide .card .card-header {
+        height: 200px;
+    }
+
+    .card-article_big {
+        border-bottom: 1px dotted var(--color-border) !important;
+    }
+
+    .template-3_product .swiper-slide,
+    .template-3_tags .swiper-slide,
+    .template-3_list--product.feature-product .swiper-slide,
+    .template-3_partner .swiper-slide,
+    .template-3_sidebar .swiper-container .swiper-slide,
+    #tab-list .card .h-100,
+    .template-3_kcn .swiper-slide{
+        height: unset !important;
     }
 }
