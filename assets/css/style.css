@@ -367,7 +367,7 @@ textarea:focus {
 }
 
 .template-3_header {
-    /*z-index: 100;*/
+    z-index: 100;
 }
 
 .template-3_header .container-fluid {
@@ -3191,6 +3191,7 @@ textarea:focus {
     .template-3_header {
         background-color: var(--color-main) !important;
         padding: 5px 0 60px;
+        z-index: unset;
     }
 
     .template-3_header .header-logo {
