@@ -644,9 +644,9 @@
 	</div>
 </div>
 <header class="shadow-lg bg-white position-relative template-3_header">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row row-10 align-items-lg-center">
-			<div class="col-lg-1">
+			<div class="col-lg-2">
 				<div class="header-overlay"></div>
 				<div class="header-action--hamburger d-block d-lg-none">
 					<div id="hamburger" class="hamburger">
@@ -665,38 +665,20 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-6">
 				<div class="header-navigation">
 					<div class="header-action d-block d-lg-none">
 						<div class="container p-2">
 							<div class="row row-10">
-								<div class="col-6 d-none mb-3">
+								<div class="col-6 mb-3">
 									<a href="#modalLogin" data-toggle="modal" class="btn btn-theme bg-gradient">
 										Đăng nhập
 									</a>
 								</div>
-								<div class="col-6 d-none mb-3">
+								<div class="col-6 mb-3">
 									<a href="#modalRegister" data-toggle="modal"
 									   class="btn btn-theme btn-theme-outline bg-gradient">
 										Đăng ký
-									</a>
-								</div>
-								<div class="col-12">
-									<a href="">
-										<div class="user-login mb-3 d-flex justify-content-start">
-											<div class="image mr-3">
-												<img src="https://file4.batdongsan.com.vn/images/newhome/icon3x/ic_user.png"
-												     alt="">
-											</div>
-											<div class="info">
-												<div class="text-dark font-weight-bold">
-													Hoàng Tấn
-												</div>
-												<div class="text-muted">
-													Tài khoản
-												</div>
-											</div>
-										</div>
 									</a>
 								</div>
 								<div class="col-12">
@@ -789,48 +771,6 @@
 							</li>
 							<li>
 								<a href="#">
-									Cần mua, cần thuê
-									<i class="fal fa-angle-down"></i>
-								</a>
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="#">Nhà đất cần mua <i class="fal fa-angle-right"></i></a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="#">Mua căn hộ chung cư</a>
-											</li>
-											<li>
-												<a href="#">Mua nhà riêng</a>
-											</li>
-											<li>
-												<a href="#">Mua căn hộ chung cư</a>
-											</li>
-											<li>
-												<a href="#">Mua nhà riêng</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Nhà đất cần mua <i class="fal fa-angle-right"></i></a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="#">Mua căn hộ chung cư</a>
-											</li>
-											<li>
-												<a href="#">Mua nhà riêng</a>
-											</li>
-											<li>
-												<a href="#">Mua căn hộ chung cư</a>
-											</li>
-											<li>
-												<a href="#">Mua nhà riêng</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">
 									Tin tức
 									<i class="fal fa-angle-down"></i>
 								</a>
@@ -895,9 +835,6 @@
 									</li>
 								</ul>
 							</li>
-							<li><a href="#">Nội - Ngoại thất</a></li>
-							<li><a href="#">Phong thuỷ</a></li>
-							<li><a href="#">Danh bạ</a></li>
 						</ul>
 						<div class="header-list d-block d-lg-none">
 							<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-start">
@@ -916,15 +853,12 @@
 								<li>
 									<a href="">Liên hệ</a>
 								</li>
-								<li>
-									<a href="">Đăng xuất</a>
-								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-4">
 				<div class="header-actions">
 					<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-end">
 						<li class="favourite">
@@ -932,32 +866,13 @@
 								<i class="far fa-heart"></i>
 							</a>
 						</li>
-						<li class="account d-none">
+						<li class="account">
 							<a href="#modalLogin" data-toggle="modal">
 								Đăng nhập
 							</a>
 							<a href="#modalRegister" data-toggle="modal">
 								Đăng ký
 							</a>
-						</li>
-						<li class="account d-block">
-							<div class="dropdown">
-								<a href="javascript:void(0)" data-toggle="dropdown">
-									Tài khoản
-									<i class="fal fa-angle-down ml-2"></i>
-								</a>
-								<div class="dropdown-menu overflow-hidden border-0 shadow-lg py-0">
-									<a class="dropdown-item p-2" href="#">
-										Tài khoản
-									</a>
-									<a class="dropdown-item p-2" href="#">
-										Đổi mật khẩu
-									</a>
-									<a class="dropdown-item p-2" href="#">
-										Đăng xuất
-									</a>
-								</div>
-							</div>
 						</li>
 						<li class="button">
 							<a href="#" class="btn template-3-btn__outline">
@@ -989,8 +904,14 @@
 				</div>
 				<div class="search-index">
 					<ul class="list-unstyled mb-0 search-tab">
-						<li class="active">Nhà đất bán</li>
-						<li>Nhà đất cho thuê</li>
+						<li class="active">
+							Nhà đất bán
+							<input type="radio" name="type" value="1">
+						</li>
+						<li>
+							Nhà đất cho thuê
+							<input type="radio" name="type" value="2">
+						</li>
 					</ul>
 					<div class="search-inner">
 						<div class="search-main">

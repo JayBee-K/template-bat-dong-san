@@ -468,4 +468,11 @@ $(document).ready(function () {
 		}, 500)
 	});
 	
+	$('.template-3_form .search-tab li').click(function (e) {
+		$('.template-3_form .search-tab li').removeClass('active');
+		$('.template-3_form .search-tab li input').prop('checked', false);
+		$(this).addClass('active');
+		$(this).find('input').prop("checked", true);
+		console.log($(this).find('input'));
+	});
 });
